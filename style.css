@@ -1,0 +1,45 @@
+
+
+
+/*
+div {
+	outline: 1px solid gray;
+}
+*/
+
+/* Below I made font color of the container div gray */
+.container {
+	color: #696969; 
+}
+/* Added padding to my row div */
+
+.row {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+/*The below makes the webpage turn gray when the browser is smaller than 450px*/ 
+
+@media only screen
+and (max-width : 450px) {
+	body {
+		background-color: gray;
+	}
+}
+
+/* I made the background color for the web page beige */
+body {
+	
+	background-color: #F5F5DC;
+}
+
+/* I changed the colors of the thumbnails (bootstrap elements) to better suit the background color of the body of the page */
+
+.thumbnail {
+	
+	background-color: #F5DEB3;
+	border-style: solid;
+	border-color: #778899;
+	border-width: 1px;
+    
+}
