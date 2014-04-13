@@ -1,0 +1,243 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<title>Favorite places in Milan</title>
+
+
+  <!-- These are the link references to the bootstrap style sheet and CSS style sheet -->
+		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+		<link href="style.css" rel="stylesheet">
+		
+
+	</head>
+
+	<body>
+	
+	    <!-- This is the navigator bar bootstrap element -->	
+		<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <!-- Bootstrap comment: Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Home</a>
+    </div>
+
+    <!-- Bootstrap comment: Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Link</a></li>
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Search</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+		
+		
+	
+		<!-- The main section of the page is a div called 'container' which contains three images with text on their left 
+			Within the container div there are three 'row' divs which eacch contain the image and text. 
+			Bootstrap allows us to make the webpage responsive. The page is divided into a 12 grid system, and we can choose the layout of the 
+			grid to create our site structure. When the browser window is reduced, the different grid sections will collapse on top of one another
+			making it easy for a mobile device user to navigate the page effectively. -->
+		
+		<div class="container">
+			<h1>Favorite places in Milan</h1>
+
+			<div class="row">
+
+		<!-- The line below refers to the layout of the grid mentioned above -->
+				<div class="col-md-4 col-sm-4 col-xs-6">
+					<h3>Porta Venezia</h3>
+					<P>
+						Porta Venezia is one of the historical gates of the city of Milan, Italy. 
+						In its present form, the gate dates back to the 19th century; nevertheless, 
+						its origins can traced back to the Medieval and even the Roman walls of the city.
+					</P>
+			
+				</div>
+
+		<!-- Below, the hidden-xs class makes the image disappear when the browser gets smaller - this can be used when you want different things
+			to show up on mobile vs desktop (such as a chart that may be to small to see on a small screen)-->
+
+				<div class="col-md-8 col-sm-8 hidden-xs">
+					<img src="images/milan_porta.jpg" class="img-responsive"/>
+				</div>
+
+			</div>
+			<!-- end of row -->
+
+			<div class="row">
+
+				<div class="col-sm-4">
+					<h3>La Scala</h3>
+					<P>
+						La Scala is a world-renowned opera house in Milan, Italy. 
+						The theatre was inaugurated on 3 August 1778 and was originally known as the New Royal-Ducal Theatre alla Scala. 
+						The premiere performance was Antonio Salieri's Europa riconosciuta.
+					</P>
+
+		<!-- Below is the code for a button element, which when clicked on opens up a modal (pop-up window) showing a youtube video -->
+				<!-- Bootstrap comment: Button trigger modal -->
+				<!-- <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">           <-- this is the old button that we deleted-->
+					  <button type="button" class="btn btn-success scala">View video</button>
+				</button>
+
+
+
+				</div>
+
+				<div class="col-md-8">
+					<img src="images/milan_scala.jpg" class="img-responsive"/>
+				</div>
+
+			</div>
+			<!-- end of row -->
+
+			<div class="row">
+
+				<div class="col-md-4">
+					<h3>Galleria Vittorio Emanuele II</h3>
+					<P>
+						The Galleria Vittorio Emanuele II is one of the world's oldest shopping malls. 
+						Housed within a four-story double arcade in central Milan, 
+						the Galleria is named after Vittorio Emanuele II, the first king of the Kingdom of Italy. 
+					</P>
+				</div>
+
+				<div class="col-md-8">
+
+					<img src="images/milan_galleria.jpg" class="img-responsive"/>
+				</div>
+
+			</div>
+			<!-- end of row -->
+
+			<!-- Latest compiled and minified JavaScript -->
+			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+			<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+			<script src="script.js"></script>
+
+			</dvi> <!-- end of container -->
+			
+			
+			<!-- Modal button that we have replaced with the one above -->
+			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			  <div class="modal-dialog">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+			        <h4 class="modal-title" id="myModalLabel">"Il Trovatore" at La Scala</h4>
+			      </div>
+			      <div class="modal-body">
+			      	
+			      	<!-- IGNORE:
+			        <iframe width="560" height="315" src="http://www.youtube.com/embed/o2-RXqU4Lg8?html5=1" frameborder="0" allowfullscreen></iframe>
+			       -->
+			       
+			      </div>
+			      <div class="modal-footer">
+			   <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			      
+			 
+			      </div>
+			    </div>
+			  </div>
+			</div>
+			
+<!-- The below are thumbnails (bootstrap elements)
+	In order to position them side by side I created a div to contain them called thumbnail container.
+	This section of the webpage would probably look better if the image size of the thumbnails were the same; 
+	is there a way to get the image to automatically fit to the size of the thumbnail divs?
+--> 
+<div class = "thumbnail-container">
+	
+<div class="thumbnail-row">
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img data-src="holder.js/300x200" <img src="images/milan_duomo.png">
+      <div class="caption">
+        <h3>Duomo</h3>
+        <p>Info on Duomo</p>
+        <p><a href="#" class="btn btn-primary" role="button">More Info</a></p>
+      </div>
+    </div>
+  </div>
+
+<div class="thumbnail-row">
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img data-src="holder.js/300x200" <img src="images/milan_navigli.jpg">
+      <div class="caption">
+        <h3>Navigli</h3>
+        <p>Info on the Navigli district</p>
+        <p><a href="#" class="btn btn-primary" role="button">More Info</a></p>
+      </div>
+    </div>
+  </div>
+  
+  
+  <div class="thumbnail-row">
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img data-src="holder.js/300x200" <img src="images/milan_brera.jpg">
+      <div class="caption">
+        <h3>Brera</h3>
+        <p>Info on the Brera district</p>
+        <p><a href="#" class="btn btn-primary" role="button">More Info</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+  
+  
+</div>
+
+</div>
+
+
+	</body>
+
+</html>
+
